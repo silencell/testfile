@@ -1,0 +1,61 @@
+1.SGML,HTML,XML,XHTML
+SGML是标准通用标记语言 
+HTML是超文本标记语言，主要是用于规定怎么显示网页
+XML是可扩展标记语言 是未来网页语言的发展方向，可能会替代HTML，他和HTML都是由SGML延伸转变而来的，你可以理解SGML是最早的版本，但现在已经淘汰不用了
+XML和HTML的最大区别就在于 XML的标签是可以自己创建的，数量无限多，而HTML的标签都是固定的而且数量有限。
+还有一个是XHTML也是现在基本上所有网页都在用的标记语言，他其实和HTML没什么本质的区别标签都一样，用法也都一样，就是比HTML更严格，比如标签必须都用小写，标签都必须有闭合标签等。
+
+2.article,section,div
+只有div可做容器。
+section章节，带有标题但本质上不是article的，用section。
+article是细化的section。使用时，除了标题还有元数据，要加header；有一组闭合标题，要加hgroup。
+
+3.水平垂直居中
+水平居中 text-align: center; 即可。
+vertical-align: middle;用法对象是平级的兄弟节点，而不是父级子级；一般用绝对定位或者弹性盒模型。
+
+4.CSS样式优先级
+(1)权值相同时，内联样式表（标签内部）> 嵌入样式表（当前文件中）> 外部样式表（外部文件中）
+(2)权值不同时，权值大的优先。标签的权值为1，类选择符的权值为10，ID选择符的权值为100。标签中样式权值1000。
+(3)!important > 用户自己设置的样式 > 网页制作者样式 > 浏览器默认的样式
+
+5.盒模型
+W3C标准盒模型 & IE盒模型 & 弹性盒模型
+content，padding，border，margin。padding和margin只有宽度属性，border有样式和颜色属性。
+IE盒模型的content是指标准模型中里面三层的总和。
+弹性盒模型采用flex布局，display：flex；即可。
+六个容器属性：（第一个为默认值）
+        flex-direction   ：row | row-reverse | column | column-reverse
+        flex-wrap        ：nowrap | wrap | wrap-reverse
+        flex-flow        ：以上两个合写
+        justify-content  ：flex-start | flex-end | center | space-between | space-around
+        align-items      ：stretch | flex-start | flex-end | center | baseline
+        align-content    ：stretch | flex-start | flex-end | center | space-between | space-around
+六个项目属性：order，flex-grow，flex-shrink，flex-basis，flex，align-self
+详情：http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+
+6.pc和h5（rem）
+
+7.动画
+img{
+    transition: 1s 1s height ease;
+}
+
+这是一个简写形式，可以单独定义成各个属性如下：
+img{
+    transition-property: height;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease;
+}
+
+8.兼容性
+9.sass
+
+jquery,找有答案的习题
+
+
+
+
+
+
